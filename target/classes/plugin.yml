@@ -1,0 +1,13 @@
+main: com.finiox.SimpleMotd.SimpleMotd
+name: SimpleMotd
+version: 1
+author: Finiox
+commands:
+  simplemotd:
+    desciption: Get information about the SimpleMotd plugin
+    usage: "/simplemotd"
+    permission: simplemotd.use
+permissions:
+  simplemotd.use:
+    description: Allows to use the /simplemotd command
+    default: op

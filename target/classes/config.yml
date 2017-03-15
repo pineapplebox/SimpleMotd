@@ -1,0 +1,8 @@
+simplemotd:
+  enabled: true
+  firstline: "&fWelcome to &cSimple&eMotd"
+  secondline:
+    - "You can assign multiple second lines"
+    - "The second line is chosen randomly"
+    - "This is a second line"
+    - "You can change these lines in the &cconfig.yml &ffile"
