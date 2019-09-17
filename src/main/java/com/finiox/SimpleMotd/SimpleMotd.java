@@ -33,7 +33,9 @@ public class SimpleMotd extends JavaPlugin implements Listener {
 	{
 		if (!(this.getConfig().getBoolean("simplemotd.enabled"))) return;
 		
-		String firstline = ChatColor.translateAlternateColorCodes('&', this.getConfig().getString("simplemotd.firstline"));
+		List<String> messages = this.getConfig().getStringList("simplemotd.firstline");
+		int randomNum = ThreadLocalRandom.current().nextInt(0, messages.size());
+		String secondline = ChatColor.translateAlternateColorCodes('&', messages.get(randomNum));
 		List<String> messages = this.getConfig().getStringList("simplemotd.secondline");
 		int randomNum = ThreadLocalRandom.current().nextInt(0, messages.size());
 		String secondline = ChatColor.translateAlternateColorCodes('&', messages.get(randomNum));
